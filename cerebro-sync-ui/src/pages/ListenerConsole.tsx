@@ -1,4 +1,3 @@
-import * as React from "react"
 import { RetroPanel } from "@/components/layout/RetroPanel"
 import { VideoPlayer } from "@/components/video/VideoPlayer"
 import { SystemStatus } from "@/components/indicators/SystemStatus"

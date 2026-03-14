@@ -4,7 +4,7 @@
  */
 import { io, Socket } from 'socket.io-client';
 
-const SERVER_URL = import.meta.env.VITE_SOCKET_SERVER_URL || 'http://localhost:5000';
+const SERVER_URL = import.meta.env.VITE_SOCKET_SERVER_URL || 'https://cerebro-network.onrender.com';
 
 export const socket: Socket = io(SERVER_URL, {
     autoConnect: false,          // We connect manually via the hook

@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --tw-border-opacity: 1;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    background-color: #050505;
+    color: #ffffff;
+    min-height: 100%;
+  }
+
+  body {
+    background-color: #050505;
+    color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rajdhani', sans-serif;
+  }
+
+  #root {
+    background-color: #050505;
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+
+  /* CRT Scanlines */
+  .scanlines {
+    background-image: repeating-linear-gradient(0deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.15) 2px,
+        rgba(0, 0, 0, 0.15) 4px);
+  }
+
+  /* Neon Text Glows */
+  .text-glow-red {
+    text-shadow: 0 0 10px #ff003c, 0 0 20px #ff003c;
+  }
+
+  .text-glow-green {
+    text-shadow: 0 0 10px #00ff9f, 0 0 20px #00ff9f;
+  }
+
+  .text-glow-amber {
+    text-shadow: 0 0 10px #ffae00, 0 0 20px #ffae00;
+  }
+
+  /* Retro Grid Background */
+  .retro-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
